@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{item.title}}detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img [src]="item.urlToimage"style="width: 100%;" alt="">
+  <ion-card>
+    <ion-card-header>
+      {{item.title}}
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="item.urlToImage" alt="">
+      <p>Author: {{item.source.name}}</p>
+      <p>Publish Time: {{item.publishedAt}}</p>
+      <p>{{item.description}}</p>
+      <a href="{{item.url}}" target="_blank" ion-button block>
+        Read more
+      </a>
+    </ion-card-content>
+    
+  </ion-card>
+</ion-content>
